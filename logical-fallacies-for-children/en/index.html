@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>..:: Logical fallacies for children ::..</title>
+  <link rel="stylesheet" href="../data/styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo"><img src="../data/logo.svg" width="54px" alt="logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+        </ul>
+      </nav>
+      <a href="https://trucomanx.github.io/en/books.html" target="_blank" class="more-books">Other books</a>
+    </div>
+  </header>
+
+  <!-- Main Section (Home) -->
+  <main id="home">
+    <div class="container main-content">
+      <div class="text-content">
+        <h2>Best book for young logic detectives!</h2>
+        <p>
+Dive into the fascinating world of logical thinking with this fun and engaging adventure. Perfect for curious minds of all ages! Uncover common fallacies, sharpen your reasoning skills, and enjoy hours of educational entertainment with our exciting new book. Discover how to spot tricky arguments, solve problems like a pro, and become a true detective of logic!
+        </p>
+        <div class="buttons">
+          <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank" class="btn primary">Buy Now</a>
+          <a href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Dr.+Fernando+Pujaico+Rivera&text=Dr.+Fernando+Pujaico+Rivera&sort=relevancerank&search-alias=books" target="_blank" class="btn secondary">buy more books by the same author</a>
+        </div>
+      </div>
+      <div class="image-content">
+        <img src="images/cover.png" alt="Book Cover" class="book-image">
+      </div>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container2">
+      <h2>About This Book</h2>
+      <p>
+In this book, children become true logical detectives, learning to identify and avoid the reasoning errors that we all face in our daily lives. With simple lessons, this guide teaches in an accessible and fun way what logical fallacies are and how to recognize them. 
+Each chapter is an opportunity to explore everyday situations where thinking can play tricks. Through practical examples, children will learn to question, reason clearly and solve problems brilliantly, like true logical geniuses. 
+This is the perfect book for those who want to develop critical skills from an early age, while having fun in an exciting intellectual challenge. Ideal for curious readers and for parents and teachers who want to encourage clear and creative thinking in children.
+      </p>
+    </div>
+  </section>
+<!-- Screenshot Section -->
+<section class="screenshot-section" id="screenshots">
+  <div class="container2">
+    <h2>Screenshots</h2>
+    <div class="screenshots-gallery">
+      <img src="images/screenshot1.png" alt="Screenshot 1" class="zoomable">
+      <img src="images/screenshot2.png" alt="Screenshot 2" class="zoomable">
+      <img src="images/screenshot3.png" alt="Screenshot 3" class="zoomable">
+      <img src="images/screenshot4.png" alt="Screenshot 4" class="zoomable">
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal for Zoom -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+
+<!-- Adicione o JavaScript aqui, antes de </body> -->
+<script>
+  // Seleciona o modal
+  var modal = document.getElementById("imageModal");
+
+  // Seleciona a imagem do modal
+  var modalImg = document.getElementById("modalImage");
+
+  // Seleciona todas as imagens que podem ser clicadas
+  var images = document.querySelectorAll(".zoomable");
+
+  // Função para abrir o modal ao clicar em uma imagem
+  images.forEach(function(image) {
+    image.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Fecha o modal quando clicar no botão de fechar
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+</script>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Logical fallacies for children. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
