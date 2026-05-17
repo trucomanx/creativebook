@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulicha - Escolha seu idioma</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .book-cover {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Imagem da capa do livro -->
+    <img src="img/cover-tiny-2.png" alt="Capa do livro Aulicha" class="book-cover">
+
+    <!-- Título e subtítulo do livro -->
+    <h1>Aulicha</h1>
+    <h2>Crônicas nos Andes</h2>
+
+    <!-- Botões de seleção de idioma -->
+    <div class="language-buttons">
+      <button onclick="window.location.href='pt/index.html'">Português</button>
+      <button onclick="window.location.href='es/index.html'">Español</button>
+      <button onclick="window.location.href='en/index.html'">English</button>
+    </div>
+
+    <!-- Rodapé com uma mensagem -->
+    <footer>
+      <p>Escolha seu idioma para continuar explorando o mundo de Aulicha</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+

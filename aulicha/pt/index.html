@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title> ..:: Aulicha ::..</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <link href="../data/base.css" media="screen" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+
+    <!--  <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>   -->
+    <script src="../data/jquery-3.7.1.min.js"></script> 
+    <script src="../data/jquery.rss-4.3.0.min.js"></script>
+    <script>
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://trucomanx.wordpress.com/rss",
+      {
+        limit: 2,
+        dateFormat: 'YYYY-MM-DD',
+        entryTemplate:'<li>{date}:<a href="{url}"> {title}</a><br/>{shortBodyPlain}</li>'
+      })
+    })
+    </script>
+
+
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+    <div class="header gradient">
+        <div id="includedHeadContent" class="top-nav darkblock"> </div>
+
+        <img src="../img/logo.svg.png" height="64"> <br>
+
+        <div class="promo-area"> 
+            <center>
+            <div class="button"style="width: 65.0%;">
+                <div style="float: left; width: 50.0%;">
+                    <center><img  src="../img/cover-tiny-2.png" width="50%"  border="0" /></center>
+                </div>
+                <div style="float: right; width: 50.0%;">
+                    <h1>Aulicha: crônicas nos Andes</h1>
+                    <p>
+Nesta obra 
+o leitor conhecerá um conjunto de histórias acontecidas na Cordilheira dos Andes do Peru. 
+Elas mostram algumas vivências do meu pai, Aurelio (1956), quando era apenas uma criança.
+
+Mediante suas palavras e seu particular olhar, 
+poderemos entrar na vida e nas pequenas aventuras dos moradores da serra; conhecendo, assim, 
+seus problemas, suas alegrias e os ensinamentos que a vida lhes proporciona. 
+		    </p> 
+                </div>
+            </div>
+            </center>
+            <br>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------->
+<p></p>
+<!----------------------------------------------------------------------------->
+    <div class="header gradient">
+        <div class="promo-area"> 
+            <div>
+                <div style="float: left; width: 60.0%;">
+                    <div style="float: left"><h2>Lista de capítulos:</h2></div>
+                    <div class="contentinlineX" style="float: left; width: 100.0%;">
+                        <ul>
+                            <li>Introdução.</li>
+                            <li>Parte 1.</li>
+                            <ul>
+								<li>Zorra</li>
+								<li>Zandor</li>
+							</ul>
+                        </ul>
+                    </div>
+                </div>
+                <div style="float: right; width: 35.0%;">
+                    <div style="float: left"><h2>Notícias do blog:</h2></div>
+                    <div class="darkblock button" style="width: 100.0%;">
+                        <div id="rss-feeds"></div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+    <div id="includedFootContent" class="content">    </div>
+
+</body>
+</html>
