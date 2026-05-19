@@ -1,121 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>..:: Word Search Puzzle ::..</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>..:: Samba de Gafieira ::..</title>
+    <link href="data/estilo.css" media="screen" rel="stylesheet" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+    <script src="data/jquery-3.7.1.min.js"></script> 
+	
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+	
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+    
+  <script>
+    // Show the button when scrolling down
+    window.addEventListener('scroll', function () {
+      const botao = document.getElementById('voltarTopo');
+      if (window.scrollY > 100) {
+        botao.style.display = 'block';
+      } else {
+        botao.style.display = 'none';
+      }
+    });
+  </script>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1 class="logo"><img src="images/logo.svg" width="54px" alt="logo"></h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
-        </ul>
-      </nav>
-      <a href="https://trucomanx.github.io/en/books.html" target="_blank" class="more-books">Other books</a>
-    </div>
-  </header>
 
-  <!-- Main Section (Home) -->
-  <main id="home">
-    <div class="container main-content">
-      <div class="text-content">
-        <h2>Best book for puzzle lovers</h2>
-        <p>
-          Explore the wonders of nature through this fun and challenging word search adventure. Suitable for all ages! Discover amazing animals, solve intriguing puzzles, and enjoy hours of entertainment with our new book.
-        </p>
-        <div class="buttons">
-          <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank" class="btn primary">Buy Now</a>
-          <a href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Dr.+Fernando+Pujaico+Rivera&text=Dr.+Fernando+Pujaico+Rivera&sort=relevancerank&search-alias=books" target="_blank" class="btn secondary">buy more books by the same author</a>
-        </div>
-      </div>
-      <div class="image-content">
-        <img src="images/cover.jpg" alt="Book Cover" class="book-image">
-      </div>
-    </div>
-  </main>
-
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <div class="container2">
-      <h2>About This Book</h2>
-      <p>
-        Get ready to embark on a wild adventure through the animal kingdom! 
-        This word search book provides entertainment for adults and children aged 7 and up, 
-        offering hours of fun and learning. 
-        With <b>90 unique puzzles</b>b, each revealing the names of familiar animals, 
-        you will be challenged to find the hidden words in all directions—horizontally, vertically, and diagonally.
-      </p>
-      <p>
-        The puzzles are organized into <b>three levels of difficulty</b>, ensuring that every player, 
-        regardless of skill level, has an engaging experience. 
-        In addition to testing your focus and reasoning, you will learn about the creatures that share our planet, 
-        from animals leaping through trees to those swimming in the oceans.
-      </p>
-      <p>
-        Whether for a relaxing break or a mental challenge, 
-        <b>"Word Search Puzzle: An Adventure in the Animal Kingdom"</b> offers the perfect blend of entertainment and education. 
-        Grab your pen and start uncovering the hidden secrets of the animal world! 
-      </p>
-    </div>
-  </section>
-<!-- Screenshot Section -->
-<section class="screenshot-section" id="screenshots">
-  <div class="container2">
-    <h2>Screenshots</h2>
-    <div class="screenshots-gallery">
-      <img src="images/screenshot1.png" alt="Screenshot 1" class="zoomable">
-      <img src="images/screenshot2.png" alt="Screenshot 2" class="zoomable">
-      <img src="images/screenshot3.png" alt="Screenshot 3" class="zoomable">
-    </div>
-  </div>
-</section>
+<!----------------------------------------------------------------------------->
+<div id="includedHeadContent"> </div>
+<!----------------------------------------------------------------------------->
+<div class="container">
 
 
-<!-- Modal for Zoom -->
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImage">
+<!----------------------------------------------------------------------------->
+<div class="box">
+<h1>Word Search Puzzle: An Adventure in the Animal Kingdom</h1>
+
+<div style="float: left; width: 40.0%;">
+<center><img src="images/cover.png" border="0" /></center>
 </div>
 
+<div style="float: right; width: 60.0%;">
+<p>Get ready to embark on a wild adventure through the animal kingdom! This word search book provides entertainment for adults and children aged 7 and up, offering hours of fun and learning. With 90 unique puzzlesb, each revealing the names of familiar animals, you will be challenged to find the hidden words in all directions—horizontally, vertically, and diagonally.</p>
 
-<!-- Adicione o JavaScript aqui, antes de </body> -->
-<script>
-  // Seleciona o modal
-  var modal = document.getElementById("imageModal");
+<p>The puzzles are organized into three levels of difficulty, ensuring that every player, regardless of skill level, has an engaging experience. In addition to testing your focus and reasoning, you will learn about the creatures that share our planet, from animals leaping through trees to those swimming in the oceans.</p>
 
-  // Seleciona a imagem do modal
-  var modalImg = document.getElementById("modalImage");
+<p>Whether for a relaxing break or a mental challenge, this book offers the perfect blend of entertainment and education. Grab your pen and start uncovering the hidden secrets of the animal world! </p>
 
-  // Seleciona todas as imagens que podem ser clicadas
-  var images = document.querySelectorAll(".zoomable");
+</div>
 
-  // Função para abrir o modal ao clicar em uma imagem
-  images.forEach(function(image) {
-    image.addEventListener("click", function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    });
-  });
+</div>
+<!----------------------------------------------------------------------------->
+<div id="buybook" class="box">
 
-  // Fecha o modal quando clicar no botão de fechar
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
-</script>
+<h1>Buy Printed Book</h1>
+
+<h2>Brazil</h2>
+
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">
+<img src="images/uiclap.svg"
+     border="0"
+     style="display: block; float: left; width:15%; padding:15px" />
+</a>
+
+<p>
+Using this link, you can purchase in Brazil a
+<b>black and white</b> printed version of the book
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Word Search Puzzle: An Adventure in the Animal Kingdom</a>.
+</p>
+
+<div style="clear: both;"></div>
+
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">
+<img src="images/amazon.svg"
+     border="0"
+     style="display: block; float: left; width:15%; padding:15px" />
+</a>
+
+<p>
+Using this link, you can purchase a
+<b>black and white</b> printed version of the book
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Word Search Puzzle: An Adventure in the Animal Kingdom</a>.
+</p>
+
+<div style="clear: both;"></div>
+
+<h2>Rest of the World</h2>
+
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">
+<img src="images/amazon.svg"
+     border="0"
+     style="display: block; float: left; width:15%; padding:15px" />
+</a>
+
+<p>
+Using this link, you can purchase a
+<b>black and white</b> printed version of the book
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Word Search Puzzle: An Adventure in the Animal Kingdom</a>.
+</p>
+
+</div>
+
+<!----------------------------------------------------------------------------->
+<div id="screenshots" class="box">
+
+<h1>Screenshots</h1>
+
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+    <div style="width: 45%;">
+        <center>
+            <img src="images/screenshot1.png"
+                 border="0"
+                 style="width: 100%;" />
+        </center>
+    </div>
+
+    <div style="width: 45%;">
+        <center>
+            <img src="images/screenshot2.png"
+                 border="0"
+                 style="width: 100%;" />
+        </center>
+    </div>
+
+</div>
+
+</div>
+<!----------------------------------------------------------------------------->
+
+<div id="donate" class="box">
+
+<h1>Donations</h1>
+
+<h2>Buy Me a Coffee ☕</h2>
+
+<p>
+If you appreciate my work and would like to support my projects,
+<a href="https://ko-fi.com/trucomanx">you can buy me a coffee! ☕</a>
+Your support helps keep my projects running and allows me to create more useful tools.
+</p>
+
+<h2>Using Credit Card</h2>
+
+<p>
+If you appreciate my work and would like to support my projects,
+you can donate <b>$3 USD</b> using a
+<a href="https://buy.stripe.com/bIYaHZ51k5Qt61a144">credit card</a>.
+Your support helps keep my projects running and allows me to create more useful tools.
+</p>
+
+<h2>Using PIX</h2>
+
+<p>
+
+<a href="images/PixQR7.jpeg">
+<img src="images/PixQR7.jpeg"
+     border="0"
+     style="display: block; float: left; width:7%" />
+</a>
+
+If you appreciate my work and are in Brazil,
+you can send me a
+<a href="images/PixQR7.jpeg"><b>PIX</b></a>
+payment of <b>R$ 7</b>.
+Your support helps keep my projects running and allows me to create more useful tools.
+
+<div style="clear: both;"></div>
+
+</p>
+
+<h2>Using PayPal</h2>
+
+<p>
+
+You can donate <b>10 Brazilian reais</b> using the following link
+to my PayPal account with the ID:
+<b>ballroomdancebackup</b>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+      method="post"
+      target="_top">
+
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="77EX7RS7U6D56" />
+<input type="hidden" name="item_name" value="Support this project" />
+<input type="hidden" name="currency_code" value="BRL" />
+<input type="hidden" name="amount" value="10" />
+
+<input type="image"
+       src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+       border="0"
+       name="submit"
+       title="PayPal - The safer, easier way to pay online!"
+       alt="Donate using PayPal button" />
+
+<img alt="Donate using PayPal"
+     border="0"
+     src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+     width="1"
+     height="1" />
+
+</form>
+
+</p>
+
+</div>
+<!----------------------------------------------------------------------------->
+<div id="bugs" class="box">
+
+<h1>Error Reports</h1>
+
+<p>
+You can submit a question or observation regarding an error
+<a href="https://savannah.nongnu.org/users/trucomanx" target="_blank">here</a>.
+</p>
+
+</div>
+<!----------------------------------------------------------------------------->
 
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 WORD SEARCH PUZZLE. All Rights Reserved.</p>
-  </footer>
+
+</div>
+
+<button id="voltarTopo"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑ Top
+</button>
+
+<!----------------------------------------------------------------------------->
+<div id="includedFootContent" class="content"> </div>
+<!----------------------------------------------------------------------------->
+
+
 </body>
 </html>
-
