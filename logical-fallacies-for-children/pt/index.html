@@ -1,107 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>..:: Falácias Lógicas para Crianças ::..</title>
-  <link rel="stylesheet" href="../data/styles.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>..:: Samba de Gafieira ::..</title>
+    <link href="data/estilo.css" media="screen" rel="stylesheet" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+    <script src="data/jquery-3.7.1.min.js"></script> 
+	
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+	
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+    
+  <script>
+    // Mostrar o botão quando rolar para baixo
+    window.addEventListener('scroll', function () {
+      const botao = document.getElementById('voltarTopo');
+      if (window.scrollY > 100) {
+        botao.style.display = 'block';
+      } else {
+        botao.style.display = 'none';
+      }
+    });
+  </script>
 </head>
 <body>
-  <!-- Seção do Cabeçalho -->
-  <header>
-    <div class="container">
-      <h1 class="logo"><img src="../data/logo.svg" width="54px" alt="logo"></h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
-        </ul>
-      </nav>
-      <a href="https://trucomanx.github.io/en/books.html" target="_blank" class="more-books">Outros livros</a>
+
+<!----------------------------------------------------------------------------->
+<div id="includedHeadContent"> </div>
+<!----------------------------------------------------------------------------->
+<div class="container">
+
+
+<!----------------------------------------------------------------------------->
+<div class="box">
+<h1>Falácias lógicas para crianças: Lições divertidas para entender enganos comuns</h1>
+
+<div style="float: left; width: 40.0%;">
+<center><img src="images/cover.png" border="0" /></center>
+</div>
+
+<div style="float: right; width: 60.0%;">
+<p>
+Neste livro, as crianças se tornam verdadeiros detetives lógicos, aprendendo a identificar e evitar os erros de raciocínio que todos enfrentamos no dia a dia. Com lições simples, este guia ensina de forma acessível e divertida o que são falácias lógicas e como reconhecê-las. Cada capítulo é uma oportunidade para explorar situações cotidianas onde o pensamento pode nos enganar. Através de exemplos práticos, as crianças aprenderão a questionar, raciocinar claramente e resolver problemas de forma brilhante, como verdadeiros gênios da lógica. Este é o livro perfeito para quem deseja desenvolver habilidades críticas desde cedo, enquanto se diverte em um emocionante desafio intelectual. Ideal para leitores curiosos e para pais e professores que desejam incentivar o pensamento claro e criativo nas crianças. 
+</p>
+
+</div>
+
+</div>
+<!----------------------------------------------------------------------------->
+<div id="reference" class="box">
+
+<h1>Referência</h1>
+
+<p> Download o <a href="data/bibliography.bib">arquivo em formato bibtex</a>. </p> 
+<pre>
+
+</pre>
+</div>
+<!----------------------------------------------------------------------------->
+<div id="buybook" class="box">
+<h1>Comprar livro impresso</h1>
+<h2>Brasil</h2>
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank"><img  src="images/uiclap.svg" border="0" style = "display: block;float: left; width:15%; padding:15px" /></a>
+<p> Usando este link, você pode adquirir no Brasil uma versão em <b>branco e preto</b> do livro <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Falácias lógicas para crianças: Lições divertidas para entender enganos comuns</a>. </p> 
+<div style="clear: both;"></div>
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank"><img  src="images/amazon.svg" border="0" style = "display: block;float: left; width:15%; padding:15px" /></a>
+<p> Usando este link, você pode adquirir uma versão em <b>branco e preto</b> do livro <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Falácias lógicas para crianças: Lições divertidas para entender enganos comuns</a>. </p> 
+<div style="clear: both;"></div>
+<h2>Resto do mundo</h2>
+<a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank"><img  src="images/amazon.svg" border="0" style = "display: block;float: left; width:15%; padding:15px" /></a>
+<p> Usando este link, você pode adquirir uma versão em <b>branco e preto</b> do livro <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank">Falácias lógicas para crianças: Lições divertidas para entender enganos comuns</a>. </p> 
+</div>
+
+<!----------------------------------------------------------------------------->
+<div id="screenshots" class="box">
+
+<h1>Screenshots</h1>
+
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+    <div style="width: 45%;">
+        <center>
+            <img src="images/screenshot1.png"
+                 border="0"
+                 style="width: 100%;" />
+        </center>
     </div>
-  </header>
 
-  <!-- Seção Principal (Início) -->
-  <main id="home">
-    <div class="container main-content">
-      <div class="text-content">
-        <h2>O melhor livro para jovens detetives da lógica!</h2>
-        <p>
-Mergulhe no fascinante mundo do pensamento lógico com esta aventura divertida e envolvente. Perfeito para mentes curiosas de todas as idades! Descubra falácias comuns, aprimore suas habilidades de raciocínio e aproveite horas de entretenimento educativo com nosso novo e empolgante livro. Aprenda a identificar argumentos enganosos, resolver problemas como um profissional e se torne um verdadeiro detetive da lógica!
-        </p>
-        <div class="buttons">
-          <a href="https://www.amazon.com/dp/B0DJM6FXXM" target="_blank" class="btn primary">Compre Agora</a>
-          <a href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Dr.+Fernando+Pujaico+Rivera&text=Dr.+Fernando+Pujaico+Rivera&sort=relevancerank&search-alias=books" target="_blank" class="btn secondary">Compre mais livros do mesmo autor</a>
-        </div>
-      </div>
-      <div class="image-content">
-        <img src="images/cover.png" alt="Capa do Livro" class="book-image">
-      </div>
+    <div style="width: 45%;">
+        <center>
+            <img src="images/screenshot2.png"
+                 border="0"
+                 style="width: 100%;" />
+        </center>
     </div>
-  </main>
 
-  <!-- Seção Sobre -->
-  <section class="about-section" id="about">
-    <div class="container2">
-      <h2>Sobre Este Livro</h2>
-      <p>
-Neste livro, as crianças se tornam verdadeiros detetives lógicos, aprendendo a identificar e evitar os erros de raciocínio que todos enfrentamos no dia a dia. Com lições simples, este guia ensina de forma acessível e divertida o que são falácias lógicas e como reconhecê-las. 
-Cada capítulo é uma oportunidade para explorar situações cotidianas onde o pensamento pode nos enganar. Através de exemplos práticos, as crianças aprenderão a questionar, raciocinar claramente e resolver problemas de forma brilhante, como verdadeiros gênios da lógica. 
-Este é o livro perfeito para quem deseja desenvolver habilidades críticas desde cedo, enquanto se diverte em um emocionante desafio intelectual. Ideal para leitores curiosos e para pais e professores que desejam incentivar o pensamento claro e criativo nas crianças.
-      </p>
-    </div>
-  </section>
-  <!-- Seção de Capturas de Tela -->
-  <section class="screenshot-section" id="screenshots">
-    <div class="container2">
-      <h2>Capturas de Tela</h2>
-      <div class="screenshots-gallery">
-        <img src="images/screenshot1.png" alt="Captura de Tela 1" class="zoomable">
-        <img src="images/screenshot2.png" alt="Captura de Tela 2" class="zoomable">
-        <img src="images/screenshot3.png" alt="Captura de Tela 3" class="zoomable">
-        <img src="images/screenshot4.png" alt="Captura de Tela 4" class="zoomable">
-      </div>
-    </div>
-  </section>
+</div>
+
+</div>
+<!----------------------------------------------------------------------------->
+<div id="donate" class="box">
+<h1>Doações</h1>
+<h2>Compre-me um café ☕</h2>
+<p>
+Se você aprecia meu trabalho e gostaria de apoiar meus projetos, 
+<a href="https://ko-fi.com/trucomanx">você pode me pagar um café! ☕</a>
+Seu apoio ajuda a manter meus projetos funcionando e me permite criar mais ferramentas úteis.
+</p>
+<h2>Usando cartão de crédito</h2>
+<p>
+Se você aprecia meu trabalho e gostaria de apoiar meus projetos, você pode me doar <b>$3 USD</b> mediante
+<a href="https://buy.stripe.com/bIYaHZ51k5Qt61a144">cartão de crédito</a>
+Seu apoio ajuda a manter meus projetos funcionando e me permite criar mais ferramentas úteis.
+</p>
+<h2>Mediante PIX</h2>
+<p>
+<a href="images/PixQR7.jpeg"><img  src="images/PixQR7.jpeg" border="0" style = "display: block;float: left; width:7%" /></a>
+Se você aprecia meu trabalho e está no Brasil, você pode me enviar um 
+<a href="images/PixQR7.jpeg"><b>PIX</b></a> de <b>R$ 7</b>.
+Seu apoio ajuda a manter meus projetos funcionando e me permite criar mais ferramentas úteis. 
+<div style="clear: both;"></div>
+
+</p>
+<h2>Mediante PayPal</h2>
+<p>
+Pode doar <b>10 reais</b> usando o seguinte link para minha conta do PayPal com o ID: <b>ballroomdancebackup</b>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="77EX7RS7U6D56" />
+<input type="hidden" name="item_name" value="Apoiar este projeto" />
+<input type="hidden" name="currency_code" value="BRL" />
+<input type="hidden" name="amount" value="10" />
+<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
+<img alt="Faça sua doação com PayPal" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+</p>
+
+</div>
+<!----------------------------------------------------------------------------->
+<div id="bugs" class="box">
+
+<h1>Reporte de erros</h1>
+<p> Pode fazer uma consulta ou observação sobre algum erro <a href="https://savannah.nongnu.org/users/trucomanx" target="_blank">aqui</a>. </p> 
+</div>
+<!----------------------------------------------------------------------------->
 
 
-  <!-- Modal for Zoom -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-  </div>
 
-<!-- Adicione o JavaScript aqui, antes de </body> -->
-  <script>
-    // Seleciona o modal
-    var modal = document.getElementById("imageModal");
+</div>
 
-    // Seleciona a imagem do modal
-    var modalImg = document.getElementById("modalImage");
+  <button id="voltarTopo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑ Topo
+  </button>
 
-    // Seleciona todas as imagens que podem ser clicadas
-    var images = document.querySelectorAll(".zoomable");
+<!----------------------------------------------------------------------------->
+<div id="includedFootContent" class="content"> </div>
+<!----------------------------------------------------------------------------->
 
-    // Função para abrir o modal ao clicar em uma imagem
-    images.forEach(function(image) {
-      image.addEventListener("click", function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-      });
-    });
 
-    // Fecha o modal quando clicar no botão de fechar
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-      modal.style.display = "none";
-    };
-  </script>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2024 Falácias Lógicas para Crianças. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
 
