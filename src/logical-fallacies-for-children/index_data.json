@@ -6,9 +6,12 @@
     "x-link": "https://x.com/trucomanx",
     "youtube-link": "https://www.youtube.com/@fernando-pujaico-rivera",
     "rss-link": "https://trucomanx.wordpress.com/rss",
-    "uiclap-bw-br-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
-    "amazon-bw-br-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
-    "amazon-bw-world-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
+    "uiclap-br-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
+    "uiclap-br-type": "cores",
+    "amazon-br-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
+    "amazon-br-type": "cores",
+    "amazon-world-link": "https://www.amazon.com/Fal%C3%A1cias-l%C3%B3gicas-para-crian%C3%A7as-divertidas/dp/6501185688",
+    "amazon-world-type": "cores",
     "coffee-link": "https://ko-fi.com/trucomanx",
     "stripe-link": "https://buy.stripe.com/bIYaHZ51k5Qt61a144"
 }
